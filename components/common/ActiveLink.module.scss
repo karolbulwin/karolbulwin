@@ -1,0 +1,69 @@
+@import "../colors";
+
+.root {
+  text-decoration: none;
+  font-size: 2em;
+  .link {
+    text-decoration: none;
+    color: $nav-links;
+    transition-duration: 200ms;
+  }
+  &:hover {
+    animation: wave 1.5s infinite;
+    color: red;
+  }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@keyframes wave {
+  from,
+  10%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  20% {
+    transform: skewX(-7deg) skewY(-7deg);
+  }
+
+  35% {
+    transform: skewX(5deg) skewY(5deg);
+  }
+
+  45% {
+    transform: skewX(-3deg) skewY(-3deg);
+  }
+
+  55% {
+    transform: skewX(2deg) skewY(2deg);
+  }
+
+  65% {
+    transform: skewX(-1deg) skewY(-1deg);
+  }
+
+  75% {
+    transform: skewX(0.5deg) skewY(0.5deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  15% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}

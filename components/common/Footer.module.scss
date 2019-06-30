@@ -1,0 +1,50 @@
+@import "../colors";
+
+.root {
+  position: relative;
+  background-color: $footer;
+  background-image: $footer-grad;
+  color: black;
+  padding: 0.5em;
+  text-align: center;
+  border-top: 0.0625em solid #666;
+  box-shadow: 0 -1px 3px 2px rgba(0, 0, 0, 0.658);
+  z-index: 1;
+  .icon {
+    display: inline-block;
+    padding: 0.2em;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    span {
+      font-size: 2.4em;
+      transition-duration: 300ms;
+      &:hover {
+        color: $footer;
+      }
+    }
+  }
+  .email {
+    padding: 0.5em;
+    text-decoration: none;
+    a {
+      font-size: 1.4em;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.805);
+      transition-duration: 300ms;
+    }
+    span {
+      font-size: 1.4em;
+    }
+    a:hover {
+      color: $footer-email-hover;
+    }
+  }
+  .copyright {
+    padding: 0.7em;
+    span {
+      padding: 0;
+    }
+  }
+}

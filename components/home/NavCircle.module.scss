@@ -1,0 +1,38 @@
+@import "../colors";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  border: none;
+  background: $home-circle-bg;
+  background-image: $home-circle-bg-grad;
+  box-shadow: inset 0 0 9px 4px black;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  animation: fadeIn 2000ms cubic-bezier(0, 0.1, 0.73, 0.75) both;
+  transition-duration: 300ms;
+  &:hover {
+    transform: scale(1.1);
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,15 @@
+.env
+config.js
+sharp.js
+tools
+.next
+next.config
+now.json
+server.js
+server.1.js
+static
+node_modules
+.nowignore
+.env.build
+next.config.js
+bundles

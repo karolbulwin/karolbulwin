@@ -1,0 +1,53 @@
+@import "../components/colors.scss";
+
+.root {
+  background-color: black;
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1em;
+    .title {
+      display: flex;
+      flex-basis: 50%;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.5em 1em;
+      color: $title-color;
+      text-align: center;
+      line-height: 2em;
+      h1 {
+        animation: show 1500ms 50ms ease-in both;
+      }
+      h2 {
+        animation: show 2000ms 200ms ease-in both;
+      }
+    }
+    .asideNav {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+    @media screen and (min-width: 560px) {
+      font-size: 1.2em;
+    }
+    @media screen and (min-width: 700px) {
+      font-size: 1.4em;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}

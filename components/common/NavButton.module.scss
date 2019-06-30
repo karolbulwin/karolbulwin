@@ -1,0 +1,35 @@
+@import "../colors";
+
+.root {
+  font-size: 1em;
+  background-color: transparent;
+  cursor: pointer;
+  color: $nav-btn;
+  margin: 0;
+  border: none;
+  transition-duration: 400ms;
+  outline: none;
+  padding: 0.6em;
+  z-index: 2;
+
+  &:hover {
+    color: $nav-btn-hover;
+  }
+  &:focus {
+    color: $nav-btn-hover;
+  }
+}
+
+.open {
+  composes: root;
+  z-index: 2;
+  position: relative;
+  color: $nav-btn-close;
+  &:hover {
+    color: $nav-btn-closeHF;
+  }
+  &:focus {
+    color: $nav-btn-closeHF;
+  }
+  transform: rotate(180deg);
+}
