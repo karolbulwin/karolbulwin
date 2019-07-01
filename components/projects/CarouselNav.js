@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import css from "./CarouselNav.module.scss";
-import FaIcon from "../common/FaIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CarouselNav = ({
 	onPrevious,
@@ -26,10 +26,28 @@ const CarouselNav = ({
 				onClick={onPrevious}
 				aria-label="Previous"
 			>
-				<FaIcon faName="faChevronLeft" />
+				<span>
+					<FontAwesomeIcon
+						icon="chevron-left"
+						style={{
+							maxWidth: 30,
+							display: "inline-block",
+							verticalAlign: "-0.125em"
+						}}
+					/>
+				</span>
 			</button>
 			<button className={css.btnRigth} onClick={onNext} aria-label="Next">
-				<FaIcon faName="faChevronRight" />
+				<span>
+					<FontAwesomeIcon
+						icon="chevron-right"
+						style={{
+							maxWidth: 30,
+							display: "inline-block",
+							verticalAlign: "-0.125em"
+						}}
+					/>
+				</span>
 			</button>
 		</>
 	);

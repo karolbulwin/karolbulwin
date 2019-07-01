@@ -1,6 +1,7 @@
 import { memo } from "react";
 import ProptTypes from "prop-types";
-import FaIcon from "./FaIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import css from "./FaIconHref.module.scss";
 
 const FaIconHref = memo(({ faName, name, href }) => {
@@ -12,7 +13,16 @@ const FaIconHref = memo(({ faName, name, href }) => {
 				href={href}
 				aria-label={`See my profile at ${name}.`}
 			>
-				<FaIcon faName={faName} />
+				<span>
+					<FontAwesomeIcon
+						icon={["fab", faName]}
+						style={{
+							maxWidth: 44.8,
+							display: "inline-block",
+							verticalAlign: "-0.125em"
+						}}
+					/>
+				</span>
 			</a>
 		</div>
 	);

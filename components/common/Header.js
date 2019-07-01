@@ -48,22 +48,22 @@ const Header = memo(() => {
 						<ActiveLink href="/contact">Contact</ActiveLink>
 						<li className={css.socialIcons}>
 							<FaIconHref
-								faName="faGithub"
+								faName="github"
 								name="Github"
 								href="https://github.com/karolbulwin"
 							/>
 							<FaIconHref
-								faName="faLinkedinIn"
+								faName="linkedin-in"
 								name="Linkedin"
 								href="https://www.linkedin.com/in/karol-bulwin-501770184/"
 							/>
 							<FaIconHref
-								faName="faTwitter"
+								faName="twitter"
 								name="Twitter"
 								href="https://twitter.com/BulwinKarol"
 							/>
 							<FaIconHref
-								faName="faFacebook"
+								faName="facebook"
 								name="Facebook"
 								href="https://www.facebook.com/karol.bulwin.5"
 							/>

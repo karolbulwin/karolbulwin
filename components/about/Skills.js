@@ -3,14 +3,14 @@ import css from "./Skills.module.scss";
 
 const Skills = () => (
 	<div className={css.root}>
-		<FaIcon faName="faJs" />
-		<FaIcon faName="faReact" />
-		<FaIcon faName="faNode" />
-		<FaIcon faName="faHtml5" />
-		<FaIcon faName="faSass" />
-		<FaIcon faName="faCss3Alt" />
-		<FaIcon faName="faBootstrap" />
-		<FaIcon faName="faGitAlt" />
+		<FaIcon faName="js" />
+		<FaIcon faName="react" />
+		<FaIcon faName="node" />
+		<FaIcon faName="html5" />
+		<FaIcon faName="sass" />
+		<FaIcon faName="css3-alt" />
+		<FaIcon faName="bootstrap" />
+		<FaIcon faName="git-alt" />
 	</div>
 );
 
