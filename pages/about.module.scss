@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    animation: show 0.6s;
+    animation: show 0.4s;
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     .title {
       padding: 0.5em 1em;
@@ -39,12 +39,12 @@
     column-gap: 2em;
     column-rule: 1px solid goldenrod;
     text-align: justify;
-    animation: show 0.6s;
+    animation: show 0.4s;
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
   }
 
   .imgContainer {
-    animation: show 0.6s;
+    animation: show 0.4s;
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     margin: 1.5em;
     width: 8em;
