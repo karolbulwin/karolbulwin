@@ -9,7 +9,7 @@
   border: none;
   transition-duration: 400ms;
   outline: none;
-  padding: 0.6em;
+  padding: 0.3em 0.3em 0.6em 0.6em;
   z-index: 2;
 
   &:hover {
@@ -31,5 +31,5 @@
   &:focus {
     color: $nav-btn-closeHF;
   }
-  transform: rotate(180deg);
+  transform: rotate(90deg) translateX(-8px);
 }
