@@ -4,30 +4,84 @@
   .btnContainer {
     display: flex;
     justify-content: flex-end;
+    height: 4em;
+    // .btn {
+    //   background: white;
+    //   border: 2px solid $contact-inputs-border;
+    //   border-radius: 0.2rem;
+    //   color: $contact-inputs-border;
+    //   padding: 0.5em 1em;
+    //   transition-duration: 300ms;
+    //   font-weight: bold;
+    //   margin-top: 0.4em;
+    //   &:not(:disabled) {
+    //     border-color: $contact-btn;
+    //     color: $contact-btn;
+    //   }
+    //   &:hover:disabled {
+    //     cursor: not-allowed;
+    //   }
+    //   &:hover:not(:disabled) {
+    //     background: $contact-btn;
+    //     color: white;
+    //   }
+    //   &:active {
+    //     background: darken($color: $contact-btn, $amount: 10%);
+    //   }
+    // }
     .btn {
-      background: white;
-      border: 2px solid $contact-inputs-border;
-      border-radius: 0.2rem;
-      color: $contact-inputs-border;
-      padding: 0.5em 1em;
-      transition-duration: 300ms;
+      visibility: hidden;
+      text-align: center;
+      justify-content: center;
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      border: none;
+      background: $home-circle-bg;
+      background-image: $home-circle-bg-grad;
+      box-shadow: inset 0 0 5px 3px black;
+      align-items: center;
+      font-size: 1em;
       font-weight: bold;
-      margin-top: 0.4em;
-      &:not(:disabled) {
-        border-color: $contact-btn;
-        color: $contact-btn;
-      }
-      &:hover:disabled {
-        cursor: not-allowed;
-      }
-      &:hover:not(:disabled) {
-        background: $contact-btn;
-        color: white;
+      cursor: pointer;
+      transition-duration: 300ms;
+      color: $asid-nav-bg;
+      &:hover {
+        box-shadow: inset 0 0 7px 4px black;
+        background: darken($color: $home-circle-bg, $amount: 2%);
+        background-image: $home-circle-bg-grad;
+        font-size: 0.99em;
       }
       &:active {
-        background: darken($color: $contact-btn, $amount: 10%);
+        box-shadow: inset 0 0 9px 6px black;
+        background: darken($color: $home-circle-bg, $amount: 2%);
+        background-image: $home-circle-bg-grad;
+        font-size: 0.987em;
+        color: lighten($color: $asid-nav-bg, $amount: 10%);
+        text-shadow: 0 0 2px $asid-nav-bg;
+      }
+      p {
+        padding: 0;
+        margin: 0;
       }
     }
+    .btn:not(:disabled) {
+      visibility: visible;
+      animation: fadeIn 1000ms cubic-bezier(0, 0.1, 0.73, 0.75) both;
+      transition-duration: 300ms;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.1);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
   }
   .error {
     color: red;
