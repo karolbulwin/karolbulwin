@@ -1,6 +1,7 @@
 @import "../colors";
 
 .root {
+  position: relative;
   .btnContainer {
     display: flex;
     justify-content: flex-end;
@@ -82,6 +83,10 @@
       }
     }
   }
+  .info {
+    width: 70%;
+    position: absolute;
+    bottom: 0em;
   }
   .error {
     color: red;
