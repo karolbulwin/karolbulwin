@@ -3,7 +3,6 @@
 .root {
   position: relative;
   background-color: $footer;
-  background-image: $footer-grad;
   color: black;
   padding: 0.5em;
   text-align: center;
@@ -21,7 +20,7 @@
       font-size: 2.4em;
       transition-duration: 300ms;
       &:hover {
-        color: $footer;
+        color: $footer-icon-hover;
       }
     }
   }
