@@ -104,7 +104,7 @@ const ContactForm = () => {
 							{data.sending ? "SENDING" : "SEND"}
 						</button>
 					</div>
-					<div>
+					<div className={css.info}>
 						{data.error && <p className={css.error}>{data.error}</p>}
 						{data.response && (
 							<p
