@@ -13,7 +13,7 @@ function Contact() {
 			/>
 			<Layout>
 				<div className={css.container}>
-					<h1>CONTACT &nbsp; ME</h1>
+					<h1>CONTACT ME</h1>
 					<div className={css.text}>
 						I&apos;m always interested about cool stuff. Are you minding a
 						project? Let&apos;s talk.
