@@ -14,7 +14,7 @@ const MyHead = memo(({ title, description, keywords }) => {
 			<link rel="shortcut icon" href="/static/favicon/favicon.ico" />
 			<link rel="icon" sizes="16x16 32x32 64x64" href="/static/favicon.ico" />
 			<link
-				href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap"
+				href="https://fonts.googleapis.com/css?family=Russo+One|Roboto&display=swap"
 				rel="stylesheet"
 			/>
 			<link rel="manifest" href="/static/favicon/site.webmanifest" />
