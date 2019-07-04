@@ -1,8 +1,10 @@
 @import "../components/colors.scss";
 
 .root {
-  background-color: $about-bg;
-  background-image: $about-grad;
+  background-color: #a8c0bc;
+  background-image: url("/static/images/geometry.png");
+  background-position: right;
+  background-repeat: no-repeat;
   .container {
     display: flex;
     flex-direction: column;

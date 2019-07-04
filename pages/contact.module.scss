@@ -1,8 +1,11 @@
 @import "../components/colors.scss";
 
 .root {
-  background-color: white;
+  background-color: #85a7a1;
   background-image: $contact-grad;
+  background-image: url("/static/images/geometry.png");
+  background-position: left;
+  background-repeat: no-repeat;
   .container {
     display: flex;
     flex-direction: column;

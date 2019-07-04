@@ -1,7 +1,10 @@
 @import "../components/colors.scss";
 
 .root {
-  background-color: black;
+  background-color: $main-bg;
+  background-image: url("/static/images/geometry.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
   .container {
     display: flex;
     flex-direction: column;
