@@ -11,12 +11,16 @@
   outline: none;
   padding: 0.3em 0.3em 0.6em 0.6em;
   z-index: 2;
-
+  width: 2em;
+  height: 2em;
+  transition-duration: 300ms;
   &:hover {
-    color: $nav-btn-hover;
+    width: 2.2em;
+    height: 2.2em;
   }
   &:focus {
-    color: $nav-btn-hover;
+    width: 2.2em;
+    height: 2.2em;
   }
 }
 
