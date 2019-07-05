@@ -12,11 +12,15 @@
   justify-content: center;
   width: 15%;
   font-size: 3em;
-  color: white;
+  color: $projects-arrows;
   cursor: pointer;
   user-select: none;
   outline: none;
   &:hover {
+    transition: all 0.5s;
+    animation: pulse 1s infinite;
+  }
+  &:focus {
     transition: all 0.5s;
     animation: pulse 1s infinite;
   }
