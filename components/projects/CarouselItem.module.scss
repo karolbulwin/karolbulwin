@@ -92,28 +92,28 @@
               padding: 0em 0.5em;
               margin: 1em;
               transition-duration: 300ms;
-              border-color: $contact-btn;
-              color: $contact-btn;
+              border-color: $projects-contact-btn;
+              color: $projects-contact-btn;
               &:hover:not(.disabled) {
-                border-bottom: 1px solid $contact-btn;
-                border-right: 1px solid$contact-btn;
+                border-bottom: 1px solid $projects-contact-btn;
+                border-right: 1px solid$projects-contact-btn;
                 box-shadow: 3px 3px 2px 1px #0000001f;
               }
               &:active:not(.disabled) {
-                color: darken($color: $contact-btn, $amount: 15%);
-                border-bottom: 1px solid $contact-btn;
-                border-right: 1px solid$contact-btn;
+                color: darken($color: $projects-contact-btn, $amount: 15%);
+                border-bottom: 1px solid $projects-contact-btn;
+                border-right: 1px solid$projects-contact-btn;
                 box-shadow: 1px 1px 1px 1px #0000001f;
               }
               &:focus {
                 outline: none;
-                border-bottom: 1px solid $contact-btn;
-                border-right: 1px solid$contact-btn;
+                border-bottom: 1px solid $projects-contact-btn;
+                border-right: 1px solid$projects-contact-btn;
                 box-shadow: 3px 3px 2px 1px #0000001f;
               }
             }
             .disabled {
-              color: $contact-inputs-border;
+              color: lighten($color: $projects-contact-btn, $amount: 10%);
             }
           }
         }
