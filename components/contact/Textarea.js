@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./Textarea.module.scss";
 
-const Textarea = ({ name, label, onChange, placeholder, value, error }) => (
+const Textarea = ({ name, label, onChange, placeholder, value }) => (
 	<div className={css.root}>
 		<label className={css.label} htmlFor={name}>
 			{label}
@@ -17,7 +17,6 @@ const Textarea = ({ name, label, onChange, placeholder, value, error }) => (
 			onChange={onChange}
 		/>
 		<span className={css.underline} />
-		{error && <div className="alert alert-danger">{error}</div>}
 	</div>
 );
 
