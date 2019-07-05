@@ -4,7 +4,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
   padding: 0.3em;
   background-color: $nav-bar;
   background-image: $nav-bar-grad;
@@ -13,7 +12,7 @@
   font-size: 1.4em;
   box-shadow: 0 2px 3px 1px #0000009a;
   border-bottom-left-radius: 100%;
-  z-index: 2;
+  z-index: 3;
   .navbar {
     transition-duration: 200ms;
     position: fixed;
