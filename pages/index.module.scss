@@ -21,11 +21,11 @@
       color: $title-color;
       text-align: center;
       line-height: 2em;
-      h1 {
-        animation: show 1500ms 50ms ease-in both;
+      .firstTitle {
+        margin: 0.65em 0;
       }
-      h2 {
-        animation: show 2000ms 200ms ease-in both;
+      .secondTitle {
+        margin: 0.64em 0;
       }
     }
     .asideNav {
@@ -41,16 +41,5 @@
     @media screen and (min-width: 1000px) {
       font-size: 1.6em;
     }
-  }
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0) scale(0.1);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
   }
 }

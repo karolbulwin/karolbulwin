@@ -1,6 +1,7 @@
 import Layout from "../components/common/Layout";
 import Head from "../components/common/Head";
 import AsideNav from "../components/home/AsideNav";
+import FlowingTitle from "../components/home/FlowingTitle";
 import css from "./index.module.scss";
 
 function Home() {
@@ -14,8 +15,14 @@ function Home() {
 			<Layout>
 				<div className={css.container}>
 					<div className={css.title}>
-						<h1>KAROL BULWIN</h1>
-						<h2>FRONT-END DEVELOPER</h2>
+						<div className={css.firstTitle}>
+							<FlowingTitle size={1} title="KAROL" />
+							<FlowingTitle size={1} title="BULWIN" />
+						</div>
+						<div className={css.secondTitle}>
+							<FlowingTitle size={2} title="FRONT-END" />
+							<FlowingTitle size={2} title="DEVELOPER" />
+						</div>
 					</div>
 					<div className={css.asideNav}>
 						<AsideNav />
