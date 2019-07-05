@@ -1,0 +1,41 @@
+.root {
+  position: relative;
+  display: inline-block;
+  cursor: crosshair;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
+}
+
+.flow {
+  animation-name: flow;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.3em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.show {
+  animation: show 1500ms 50ms ease-in both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
