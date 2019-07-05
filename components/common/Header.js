@@ -8,18 +8,19 @@ import css from "./Header.module.scss";
 const Header = memo(() => {
 	const [navActive, setNavActive] = useState(false);
 	const [justTurnOn, setJustTurnOn] = useState(true);
-	const [timeToHide, setTimeToHide] = useState(true);
 
 	function toggelNav() {
+		const navLinks = document.querySelectorAll("Header a");
+		const footerLinks = document.querySelectorAll("Footer a");
+
 		if (navActive) {
 			setNavActive(false);
-			const timer = setTimeout(() => {
-				setTimeToHide(true);
-			}, 800);
-			clearTimeout(timer);
+			[...navLinks].map(link => (link.tabIndex = "-1"));
+			[...footerLinks].map(link => (link.tabIndex = "0"));
 		} else {
 			setNavActive(true);
-			setTimeToHide(false);
+			[...navLinks].map(link => (link.tabIndex = "0"));
+			[...footerLinks].map(link => (link.tabIndex = "-1"));
 		}
 
 		if (justTurnOn === true) {
@@ -31,8 +32,7 @@ const Header = memo(() => {
 		return classnames(
 			css.navbar,
 			{ [css.slideIn]: navActive },
-			{ [css.slideOut]: !navActive && !justTurnOn },
-			{ [css.hide]: timeToHide }
+			{ [css.slideOut]: !navActive && !justTurnOn }
 		);
 	}
 
