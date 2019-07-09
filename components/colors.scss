@@ -2,12 +2,12 @@ $nav-bar: #605265;
 $nav-bar-grad: linear-gradient(to bottom left, rgba(0, 0, 0, 0.63), #605265);
 $nav-bar-inside: #605265;
 $nav-bar-grad-inside: linear-gradient(122deg, rgba(0, 0, 0, 0.856), #605265);
-$nav-btn: #f9ae08;
-$nav-btn-hover: #c9d8d6;
+$nav-btn: #c9d8d6;
+$nav-btn-hover: #6e9590;
 $nav-btn-close: #c9d8d6;
 $nav-btn-closeHF: darken(#c9d8d6, 15%);
 
-$nav-links: #f9ae08;
+$nav-links: #c9d8d6;
 
 $main-bg: #c2d3d0;
 
@@ -17,7 +17,7 @@ $home-circle-stroke: #f7dca2;
 $home-circle-bg: #605265;
 $home-circle-bg-grad: radial-gradient(#605265, #605265 80%);
 
-$about-img: #f9ae08;
+$about-img: #605265;
 $about-bg: rgba(220, 220, 220, 0.74);
 $about-grad: linear-gradient(to bottom, #fff, gainsboro 50%);
 
@@ -47,18 +47,18 @@ $projects-bg-grad5: linear-gradient(
   rgba(255, 255, 255, 0.671) 45%,
   #b0c6c1
 );
-$projects-indicators: #f9ae08;
+$projects-indicators: #605265;
 $projects-contact-btn: #605265;
 $projects-arrows: white;
-$contact-inputs-border: lighten(#f9ae08, 20%);
-$contact-inputs-border-active: #f9ae08;
+$contact-inputs-border: lighten(#605265, 20%);
+$contact-inputs-border-active: #605265;
 
 $contact-inputs: #c9d8d6;
 $contact-btn: #81684c;
 $contact-grad: linear-gradient(to top, #fff 50%, gainsboro);
 
-$asid-nav-bg: #f9ae08;
+$asid-nav-bg: #c9d8d6;
 
 $footer: #c9d8d6;
-$footer-icon-hover: #f9ae08;
+$footer-icon-hover: #605265;
 $footer-email-hover: black;
