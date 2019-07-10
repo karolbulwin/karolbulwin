@@ -11,7 +11,7 @@ const ActiveLink = ({ children, router, href }) => {
     return result;
   };
   const style = {
-    color: checkPath() === href ? "#6e9590" : "none"
+    color: checkPath() === href ? "#233636" : "none"
   };
 
   const handleClick = e => {

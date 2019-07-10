@@ -6,30 +6,6 @@
     display: flex;
     justify-content: flex-end;
     height: 4em;
-    // .btn {
-    //   background: white;
-    //   border: 2px solid $contact-inputs-border;
-    //   border-radius: 0.2rem;
-    //   color: $contact-inputs-border;
-    //   padding: 0.5em 1em;
-    //   transition-duration: 300ms;
-    //   font-weight: bold;
-    //   margin-top: 0.4em;
-    //   &:not(:disabled) {
-    //     border-color: $contact-btn;
-    //     color: $contact-btn;
-    //   }
-    //   &:hover:disabled {
-    //     cursor: not-allowed;
-    //   }
-    //   &:hover:not(:disabled) {
-    //     background: $contact-btn;
-    //     color: white;
-    //   }
-    //   &:active {
-    //     background: darken($color: $contact-btn, $amount: 10%);
-    //   }
-    // }
     .btn {
       visibility: hidden;
       text-align: center;
@@ -93,7 +69,7 @@
     font-weight: bold;
   }
   .success {
-    color: green;
+    color: #162120;
     font-weight: bold;
   }
 }

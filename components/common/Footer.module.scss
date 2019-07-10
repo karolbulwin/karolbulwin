@@ -3,7 +3,7 @@
 .root {
   position: relative;
   background-color: $footer;
-  color: black;
+  color: $footer-color;
   padding: 0.5em;
   text-align: center;
   border-top: 0.0625em solid #666;
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     span {
+      color: $footer-icon;
       font-size: 2.4em;
       transition-duration: 300ms;
       &:hover {

@@ -19,6 +19,7 @@
   resize: none;
   transition-duration: 300ms;
   box-shadow: 0 0 3px 1px rgb(255, 255, 255);
+  color: $contact-color;
   &:focus {
     outline: none;
   }

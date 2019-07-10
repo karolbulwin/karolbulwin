@@ -1,25 +1,30 @@
 $nav-bar: #605265;
-$nav-bar-grad: linear-gradient(to bottom left, rgba(0, 0, 0, 0.63), #605265);
+$nav-bar-grad: linear-gradient(to bottom left, #5d928a, #3e635c);
 $nav-bar-inside: #605265;
-$nav-bar-grad-inside: linear-gradient(122deg, rgba(0, 0, 0, 0.856), #605265);
+$nav-bar-grad-inside: linear-gradient(122deg, #5d928a, #3e635c);
 $nav-btn: #c9d8d6;
 $nav-btn-hover: #6e9590;
 $nav-btn-close: #c9d8d6;
 $nav-btn-closeHF: darken(#c9d8d6, 15%);
 
 $nav-links: #c9d8d6;
+$nav-social-hover: #233636;
 
 $main-bg: #c2d3d0;
 
-$title-color: darken(#605265, 12%);
+$title-color: #233636;
 
-$home-circle-stroke: #f7dca2;
-$home-circle-bg: #605265;
-$home-circle-bg-grad: radial-gradient(#605265, #605265 80%);
+$home-circle-stroke: #233636;
+$home-circle-bg: #40756d;
+$home-circle-bg-grad: radial-gradient(#65a79c, #40756d 80%);
 
-$about-img: #605265;
+$about-color: darken(#233636, 12%);
+$about-img: #233636;
 $about-bg: rgba(220, 220, 220, 0.74);
 $about-grad: linear-gradient(to bottom, #fff, gainsboro 50%);
+$skills-color: darken(#233636, 14%);
+
+$projects-color: darken(#233636, 12%);
 
 $projects-bg1: #7ea29c;
 $projects-bg-grad1: linear-gradient(to top, rgba(255, 255, 255, 0.61), #7ea29c);
@@ -47,18 +52,21 @@ $projects-bg-grad5: linear-gradient(
   rgba(255, 255, 255, 0.671) 45%,
   #b0c6c1
 );
-$projects-indicators: #605265;
-$projects-contact-btn: #605265;
+$projects-indicators: #233636;
+$projects-contact-btn: #233636;
 $projects-arrows: white;
-$contact-inputs-border: lighten(#605265, 20%);
-$contact-inputs-border-active: #605265;
 
+$contact-inputs-border: lighten(#233636, 20%);
+$contact-inputs-border-active: #233636;
 $contact-inputs: #c9d8d6;
-$contact-btn: #81684c;
+// $contact-btn: #81684c;
 $contact-grad: linear-gradient(to top, #fff 50%, gainsboro);
+$contact-color: darken(#233636, 12%);
 
 $asid-nav-bg: #c9d8d6;
 
 $footer: #c9d8d6;
-$footer-icon-hover: #605265;
-$footer-email-hover: black;
+$footer-color: darken(#233636, 7%);
+$footer-icon: darken(#233636, 7%);
+$footer-icon-hover: darken(#233636, 12%);
+$footer-email-hover: darken(#233636, 12%);
