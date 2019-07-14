@@ -12,8 +12,10 @@
   width: 100%;
   height: 10em;
   padding: 12px 1em;
+  margin: 0;
   box-sizing: border-box;
   border: none;
+  display: block;
   border-bottom: 2px solid $contact-inputs-border;
   background-color: $contact-inputs;
   font-size: inherit;
@@ -29,7 +31,7 @@
 
 .underline {
   position: absolute;
-  bottom: 4.2px;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 2px;
