@@ -28,6 +28,9 @@
   .email {
     padding: 0.5em;
     text-decoration: none;
+    @media screen and (max-width: 303px) {
+      font-size: 0.8em;
+    }
     a {
       font-size: 1.4em;
       text-decoration: none;
