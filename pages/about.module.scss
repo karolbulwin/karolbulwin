@@ -5,6 +5,7 @@
   background-image: url("/static/images/geometry.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $about-color;
   .container {
     display: flex;

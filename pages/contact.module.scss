@@ -6,6 +6,7 @@
   background-image: url("/static/images/geometry.png");
   background-position: left;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $contact-color;
   .container {
     display: flex;

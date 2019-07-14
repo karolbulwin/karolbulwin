@@ -5,6 +5,7 @@
   background-image: url("/static/images/geometry.png");
   background-position: bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   .container {
     display: flex;
     flex-direction: column;
