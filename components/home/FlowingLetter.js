@@ -26,10 +26,12 @@ const FlowingLetter = ({ letter }) => {
 	}
 
 	function handleMouseEnter() {
-		setIsTimeToFlow(true);
-		setTimeout(() => {
-			setIsTimeToFlow(false);
-		}, 1000);
+		if (!isTimeToFlow) {
+			setIsTimeToFlow(true);
+			setTimeout(() => {
+				setIsTimeToFlow(false);
+			}, 1000);
+		}
 	}
 	return (
 		<div
